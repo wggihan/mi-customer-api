@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: CustomerApi
+  description: API Definition of CustomerApi
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/hr
+paths:
+  /customers:
+    get:
+      responses:
+        default:
+          description: Default response
