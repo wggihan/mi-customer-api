@@ -2,6 +2,7 @@
 <api context="/hr" name="CustomerApi" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET" uri-template="/customers">
         <inSequence>
+        <property action="remove" name="Accept-Encoding" scope="transport"/>
             <call>
                 <endpoint>
                     <http method="get" uri-template="https://jsonplaceholder.typicode.com/users/">
